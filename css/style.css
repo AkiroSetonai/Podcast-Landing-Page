@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #121A2A;
+    width: 100%;
+    color: #ffff;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.left .logo-area {
+    max-width: 720px;
+}
+
+.left div {
+    max-width: 720px;
+    margin: 100px 126px;
+}
+
+.left div span {
+    color: #7c5fd6
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 45px;
+    margin: 163px 53px;
+}
+
+.logo span {
+    color: #7c5fd6;
+}
+
+.title {
+    font-size: 38px;
+    margin: 28px 0;
+}
+
+.description {
+    line-height: 150%;
+    color: #dbdbdb;
+    margin-bottom: 58px;
+}
+
+h2 {
+    margin-bottom: 14px;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.form-area form {
+    background-color: #2C344B;
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    height: 46px;
+    border-radius: 80px;
+    margin-bottom: 38px;
+}
+
+.form-area {
+    animation: fadeInDown 2s;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.input {
+    width: 100%;
+    height: 46px;
+    border-radius: 80px;
+    border: 0;
+    background-color: transparent;
+    padding: 0 8px 0 14px;
+    outline: none;
+    color: #ffff;
+    font-size: 16px;
+    flex: 3;
+}
+
+.button {
+    border-radius: 80px;
+    flex: 1;
+    margin: 4px;
+    border: 0;
+    background-color: #39317d;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffff;
+    transition: all 0.4s;
+}
+
+.button:hover {
+    background-color: #7c5fd6;
+}
+
+.plataform {
+    opacity: 0;
+    animation: fadeInRight forwards 2s;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        animation-delay: 0.5s;
+    }
+
+    15% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.plataform a {
+    text-decoration: none;
+}
+
+.plataform img {
+    filter: grayscale(100%);
+    width: 90px;
+    height: 50px;
+    object-fit: contain;
+    margin-right: 14px;
+    transition: filter 0.4s;
+    transition: transform 0.2s;
+}
+
+.plataform img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1)
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 100vh;
+}
+
+.background {
+    width: 100%;
+}
+
+.background::before {
+    position: absolute;
+    background-image: url('./microfone.png');
+    background-position: right;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    content: '';
+}
